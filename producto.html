@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Producto · Masmar</title>
+  <meta name="description" content="Muñecas de comunión personalizadas, bolsos ilustrados y detalles hechos a mano. Regalos únicos con alma artesanal." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,400;1,9..144,600&family=Nunito:wght@400;600;700;800&family=Caveat:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="product.css" />
+</head>
+<body>
+
+  <!-- SVG SPRITES -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <linearGradient id="gWingA" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4fd6cf"/><stop offset="1" stop-color="#1fa7a6"/></linearGradient>
+      <linearGradient id="gWingB" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#cdb6f5"/><stop offset="1" stop-color="#8e6ccf"/></linearGradient>
+      <symbol id="butterfly" viewBox="0 0 120 100">
+        <g class="wing wing--l">
+          <path d="M58 48 C40 8, 6 4, 8 30 C9 46, 30 52, 58 52Z" fill="url(#gWingA)"/>
+          <path d="M58 54 C34 56, 14 70, 24 86 C34 98, 52 80, 58 58Z" fill="url(#gWingB)"/>
+          <circle cx="26" cy="28" r="5" fill="#fff" opacity=".55"/>
+        </g>
+        <g class="wing wing--r">
+          <path d="M62 48 C80 8, 114 4, 112 30 C111 46, 90 52, 62 52Z" fill="url(#gWingA)"/>
+          <path d="M62 54 C86 56, 106 70, 96 86 C86 98, 68 80, 62 58Z" fill="url(#gWingB)"/>
+          <circle cx="94" cy="28" r="5" fill="#fff" opacity=".55"/>
+        </g>
+        <rect x="57" y="30" width="6" height="46" rx="3" fill="#3b2a6b"/>
+        <path d="M60 32 C56 20, 50 14, 44 12 M60 32 C64 20, 70 14, 76 12" stroke="#3b2a6b" stroke-width="2" fill="none" stroke-linecap="round"/>
+      </symbol>
+      <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6L5 8Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 8V6a3 3 0 0 1 6 0v2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+      <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="10" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 10V7a4 4 0 0 1 8 0v3" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+      <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z" fill="currentColor"/></symbol>
+    </defs>
+  </svg>
+
+  <!-- HEADER -->
+  <header class="nav" id="nav">
+    <a href="index.html#inicio" class="brand" aria-label="Masmar inicio">
+      <svg class="brand__fly" viewBox="0 0 120 100"><use href="#butterfly"/></svg>
+      <span class="brand__word">Masmar</span>
+    </a>
+    <nav class="nav__links" aria-label="Principal">
+      <a href="index.html#colecciones">Colecciones</a>
+      <a href="index.html#tienda">Tienda</a>
+      <a href="index.html#personaliza">Personaliza</a>
+      <a href="index.html#proceso">Cómo trabajamos</a>
+    </nav>
+    <button class="cart-btn" id="cartBtn" aria-label="Abrir carrito">
+      <svg><use href="#i-bag"/></svg>
+      <span class="cart-btn__count" id="cartCount">0</span>
+    </button>
+  </header>
+
+  <main id="pd" class="pd-page"></main>
+
+  <footer class="footer">
+    <div class="footer__brand">
+      <span class="brand__word">Masmar</span>
+      <p>Regalos y detalles personalizados, hechos a mano.</p>
+    </div>
+    <div class="footer__cols">
+      <div><h4>Tienda</h4><a href="index.html#tienda">Todos los productos</a><a href="index.html#personaliza">Personaliza</a><a href="index.html#colecciones">Colecciones</a></div>
+      <div><h4>Ayuda</h4><a href="#">Envíos y plazos</a><a href="#">Devoluciones</a><a href="#">Contacto</a></div>
+      <div><h4>Síguenos</h4><a href="https://www.tiktok.com/@masmarart" target="_blank" rel="noopener">TikTok · @masmarart</a></div>
+    </div>
+    <div class="footer__pay">
+      <span>Pago seguro</span>
+      <span class="paylogo">VISA</span><span class="paylogo">Mastercard</span><span class="paylogo">PayPal</span><span class="paylogo">Bizum</span><span class="paylogo">Apple Pay</span>
+    </div>
+    <p class="footer__legal">© <span id="year"></span> Masmar · Aviso legal · Privacidad · Cookies</p>
+  </footer>
+
+  <!-- BARRA MÓVIL -->
+  <div class="mobile-bar" id="mobileBar">
+    <span><strong id="mobileTotal">0,00 €</strong> · <span id="mobileItems">0 artículos</span></span>
+    <button class="btn btn--primary btn--sm" data-open-checkout>Finalizar compra</button>
+  </div>
+
+  <!-- CARRITO -->
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="drawer" aria-label="Tu cesta" aria-hidden="true">
+    <div class="drawer__head">
+      <h3>Tu cesta</h3>
+      <button class="icon-btn" data-close aria-label="Cerrar"><svg><use href="#i-close"/></svg></button>
+    </div>
+    <div class="ship-meter">
+      <p id="shipMsg">Te faltan <strong>60,00 €</strong> para el envío gratis</p>
+      <div class="ship-meter__bar"><span id="shipBar"></span></div>
+    </div>
+    <ul class="drawer__items" id="cartItems"></ul>
+    <div class="upsell" id="upsell"></div>
+    <div class="drawer__foot">
+      <div class="row"><span>Subtotal</span><strong id="cartSubtotal">0,00 €</strong></div>
+      <button class="btn btn--primary btn--block" data-open-checkout><svg class="ico"><use href="#i-lock"/></svg> Pagar de forma segura</button>
+      <p class="tiny">Tarjeta · PayPal · Bizum · Apple Pay / Google Pay</p>
+    </div>
+  </aside>
+
+  <!-- CHECKOUT -->
+  <div class="checkout" id="checkout" aria-hidden="true" role="dialog" aria-label="Finalizar compra">
+    <div class="checkout__box">
+      <button class="icon-btn checkout__close" data-close aria-label="Cerrar"><svg><use href="#i-close"/></svg></button>
+      <div class="checkout__main">
+        <div class="checkout__brand"><svg class="brand__fly" viewBox="0 0 120 100"><use href="#butterfly"/></svg><span class="brand__word">Masmar</span><span class="secure"><svg class="ico"><use href="#i-lock"/></svg> Pago seguro</span></div>
+        <ol class="stepper" id="stepper">
+          <li class="is-active">Datos</li><li>Envío</li><li>Pago</li>
+        </ol>
+
+        <form class="cstep is-active" data-step="0" id="formDatos" novalidate>
+          <h3>¿Para quién es el pedido?</h3>
+          <div class="field"><label>Nombre y apellidos</label><input class="input" name="nombre" required autocomplete="name" /></div>
+          <div class="field-row">
+            <div class="field"><label>Email</label><input class="input" type="email" name="email" required autocomplete="email" /></div>
+            <div class="field"><label>Teléfono</label><input class="input" type="tel" name="tel" required autocomplete="tel" /></div>
+          </div>
+          <label class="check"><input type="checkbox" name="regalo" /> Es un regalo · añadir tarjeta escrita a mano (gratis)</label>
+          <div class="field gift-msg"><label>Mensaje para la tarjeta</label><textarea class="input" name="mensaje" rows="2" maxlength="160"></textarea></div>
+          <button class="btn btn--primary btn--block" type="submit">Continuar al envío</button>
+        </form>
+
+        <form class="cstep" data-step="1" id="formEnvio" novalidate>
+          <h3>¿Dónde lo enviamos?</h3>
+          <div class="field"><label>Dirección</label><input class="input" name="dir" required autocomplete="street-address" /></div>
+          <div class="field-row">
+            <div class="field"><label>Código postal</label><input class="input" name="cp" required inputmode="numeric" autocomplete="postal-code" /></div>
+            <div class="field"><label>Ciudad</label><input class="input" name="ciudad" required autocomplete="address-level2" /></div>
+          </div>
+          <div class="ship-opts" id="shipOpts"></div>
+          <div class="cstep__nav">
+            <button type="button" class="btn btn--ghost" data-back>Atrás</button>
+            <button class="btn btn--primary" type="submit">Continuar al pago</button>
+          </div>
+        </form>
+
+        <div class="cstep" data-step="2">
+          <h3>Elige cómo pagar</h3>
+          <div class="paytabs" id="paytabs">
+            <button class="paytab is-active" data-pay="card"><span>Tarjeta</span><small>Visa · Mastercard · Apple/Google Pay</small></button>
+            <button class="paytab" data-pay="paypal"><span>PayPal</span><small>Paga con tu cuenta o en 3 plazos</small></button>
+            <button class="paytab" data-pay="bizum"><span>Bizum</span><small>Desde la app de tu banco</small></button>
+          </div>
+          <div class="paypanel is-active" data-panel="card">
+            <p class="muted">Se abrirá la pasarela segura de Stripe para introducir tu tarjeta. Tus datos nunca pasan por nuestra web.</p>
+            <button class="btn btn--primary btn--block" id="payCard"><svg class="ico"><use href="#i-lock"/></svg> Pagar <span data-total></span></button>
+          </div>
+          <div class="paypanel" data-panel="paypal">
+            <div id="paypalButtons"></div>
+            <button class="btn btn--paypal btn--block" id="payPaypalDemo">Pagar con <b>PayPal</b></button>
+          </div>
+          <div class="paypanel" data-panel="bizum">
+            <ol class="bizum">
+              <li>Abre tu app bancaria y elige <b>Bizum → Enviar</b>.</li>
+              <li>Envía <b data-total></b> al <b id="bizumPhone"></b>.</li>
+              <li>En el concepto escribe <b id="bizumRef"></b>.</li>
+            </ol>
+            <button class="btn btn--bizum btn--block" id="payBizum">Ya he hecho el Bizum</button>
+          </div>
+          <div class="cstep__nav"><button type="button" class="btn btn--ghost" data-back>Atrás</button></div>
+        </div>
+
+        <div class="cstep cstep--done" data-step="3">
+          <div class="done__flies"></div>
+          <h3>¡Gracias, <span id="doneName"></span>!</h3>
+          <p>Tu pedido <b id="doneRef"></b> está confirmado. Te escribiremos a <b id="doneEmail"></b> con fotos del proceso.</p>
+          <button class="btn btn--primary" data-close>Seguir mirando</button>
+        </div>
+      </div>
+
+      <aside class="checkout__summary">
+        <h4>Resumen</h4>
+        <ul id="sumItems"></ul>
+        <div class="row"><span>Subtotal</span><span id="sumSub"></span></div>
+        <div class="row"><span>Envío</span><span id="sumShip"></span></div>
+        <div class="row row--total"><span>Total</span><strong id="sumTotal"></strong></div>
+        <ul class="guarantees">
+          <li>✓ Pago 100 % seguro y cifrado</li>
+          <li>✓ Fotos del proceso antes del envío</li>
+          <li>✓ Caja regalo incluida</li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="config.js"></script>
+  <script src="art.js"></script>
+  <script src="product.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
